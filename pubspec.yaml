@@ -19,6 +19,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
+    - assets/profile.png
     - assets/adduser-icon.png
     - assets/bg-login.png
     - assets/bus-icon.png
@@ -39,6 +40,11 @@ flutter:
     - assets/swap-icon.png
     - assets/train-icon.png
     - assets/videoplay-icon.png
+    - assets/heart2-icon.png
+    - assets/caution2-icon.png
+    - assets/clock-icon.png
+    - assets/receiptminus-icon.png
+    - assets/caution-icon.png
 
 
   

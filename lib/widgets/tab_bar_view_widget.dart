@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:instant_pay_mobile_payment_app/components/card_money_transfer.dart';
+import 'package:instant_pay_mobile_payment_app/components/card_more_services.dart';
+import 'package:instant_pay_mobile_payment_app/components/card_recent_transactions.dart';
 import 'package:instant_pay_mobile_payment_app/components/card_ticket_booking.dart';
 
 class TabBarViewWidget extends StatelessWidget {
-  const TabBarViewWidget({Key? key}) : super(key: key);
+  const TabBarViewWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 12),
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -110,20 +112,92 @@ class TabBarViewWidget extends StatelessWidget {
                     image: 'assets/videoplay-icon.png',
                   ),
                   CardTicketBooking(
-                    title: 'Movies',
-                    image: 'assets/videoplay-icon.png',
+                    title: 'Trains',
+                    image: 'assets/train-icon.png',
                   ),
                   CardTicketBooking(
-                    title: 'Movies',
-                    image: 'assets/videoplay-icon.png',
+                    title: 'Bus',
+                    image: 'assets/bus-icon.png',
                   ),
                   CardTicketBooking(
-                    title: 'Movies',
-                    image: 'assets/videoplay-icon.png',
+                    title: 'Flights',
+                    image: 'assets/flights-icon.png',
                   ),
                   CardTicketBooking(
-                    title: 'Movies',
-                    image: 'assets/videoplay-icon.png',
+                    title: 'Card',
+                    image: 'assets/car-icon.png',
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 16,
+            ),
+            const Text('More Services'),
+            const SizedBox(
+              height: 14,
+            ),
+            SizedBox(
+              height: 85,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                physics: const BouncingScrollPhysics(),
+                children: const [
+                  CardMoreServices(
+                    title: 'Invest',
+                    image: 'assets/invest-icon.png',
+                  ),
+                  CardMoreServices(
+                    title: 'Loans',
+                    image: 'assets/loans-icon.png',
+                  ),
+                  CardMoreServices(
+                    title: 'Insurance',
+                    image: 'assets/heart-icon.png',
+                  ),
+                  CardMoreServices(
+                    title: 'Fastag',
+                    image: 'assets/fastag-icon.png',
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 16,
+            ),
+            const Text('Recent Transactions'),
+            const SizedBox(
+              height: 14,
+            ),
+            SizedBox(
+              height: 85,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                physics: const BouncingScrollPhysics(),
+                children: const [
+                  CardRecentTransactions(
+                    title: 'Ananya',
+                    image: 'assets/profile.png',
+                  ),
+                  CardRecentTransactions(
+                    title: 'Laya Nair',
+                    image: 'assets/profile.png',
+                  ),
+                  CardRecentTransactions(
+                    title: 'Flynn',
+                    image: 'assets/profile.png',
+                  ),
+                  CardRecentTransactions(
+                    title: 'Jioo',
+                    image: 'assets/profile.png',
+                  ),
+                  CardRecentTransactions(
+                    title: 'Electricity',
+                    image: 'assets/profile.png',
+                  ),
+                  CardRecentTransactions(
+                    title: 'Muuri',
+                    image: 'assets/profile.png',
                   ),
                 ],
               ),
