@@ -1,0 +1,73 @@
+name: instant_pay_mobile_payment_app
+description: "A new Flutter project."
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/adduser-icon.png
+    - assets/bg-login.png
+    - assets/bus-icon.png
+    - assets/car-icon.png
+    - assets/fastag-icon.png
+    - assets/financial-icon.png
+    - assets/flights-icon.png
+    - assets/heart-icon.png
+    - assets/image-login.png
+    - assets/invest-icon.png
+    - assets/iphone-icon.png
+    - assets/lightmode-icon.png
+    - assets/loans-icon.png
+    - assets/logo.png
+    - assets/play-icon.png
+    - assets/receipt-icon.png
+    - assets/scanner-icon.png
+    - assets/swap-icon.png
+    - assets/train-icon.png
+    - assets/videoplay-icon.png
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
