@@ -4,8 +4,12 @@ class CardMoneyTransfer extends StatelessWidget {
   final String image;
   final String title;
   final Color colorContainer;
-  const CardMoneyTransfer(
-      {super.key, required this.image, required this.title, required this.colorContainer,});
+  const CardMoneyTransfer({
+    super.key,
+    required this.image,
+    required this.title,
+    required this.colorContainer,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +17,8 @@ class CardMoneyTransfer extends StatelessWidget {
       width: 165,
       height: 43,
       decoration: BoxDecoration(
-          color: const Color(0xffEDEFFF), borderRadius: BorderRadius.circular(15)),
+          color: const Color(0xffEDEFFF),
+          borderRadius: BorderRadius.circular(15)),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
@@ -35,7 +40,9 @@ class CardMoneyTransfer extends StatelessWidget {
           const SizedBox(
             width: 7,
           ),
-          Text(title)
+          Text(
+            title,
+          )
         ],
       ),
     );

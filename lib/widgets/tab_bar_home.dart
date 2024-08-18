@@ -4,8 +4,8 @@ import 'package:instant_pay_mobile_payment_app/components/card_more_services.dar
 import 'package:instant_pay_mobile_payment_app/components/card_recent_transactions.dart';
 import 'package:instant_pay_mobile_payment_app/components/card_ticket_booking.dart';
 
-class TabBarViewWidget extends StatelessWidget {
-  const TabBarViewWidget({super.key});
+class TabBarHome extends StatelessWidget {
+  const TabBarHome({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,10 @@ class TabBarViewWidget extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const Text('Money Transfer'),
+                const Text(
+                  'Money Transfer',
+                  style: TextStyle(fontWeight: FontWeight.w500, fontSize: 16),
+                ),
                 TextButton(onPressed: () {}, child: const Text('More'))
               ],
             ),
@@ -59,7 +62,10 @@ class TabBarViewWidget extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const Text('Recharge & Bill Payments'),
+                Text(
+                  'Recharge & Bill Payments',
+                  style: TextStyle(fontWeight: FontWeight.w500, fontSize: 16),
+                ),
                 TextButton(onPressed: () {}, child: const Text('More'))
               ],
             ),
@@ -97,7 +103,10 @@ class TabBarViewWidget extends StatelessWidget {
             const SizedBox(
               height: 18,
             ),
-            const Text('Ticket Booking'),
+            Text(
+              'Ticket Booking',
+              style: TextStyle(fontWeight: FontWeight.w500, fontSize: 16),
+            ),
             const SizedBox(
               height: 14,
             ),
@@ -133,7 +142,10 @@ class TabBarViewWidget extends StatelessWidget {
             const SizedBox(
               height: 16,
             ),
-            const Text('More Services'),
+            const Text(
+              'More Services',
+              style: TextStyle(fontWeight: FontWeight.w500, fontSize: 16),
+            ),
             const SizedBox(
               height: 14,
             ),
@@ -165,7 +177,10 @@ class TabBarViewWidget extends StatelessWidget {
             const SizedBox(
               height: 16,
             ),
-            const Text('Recent Transactions'),
+            const Text(
+              'Recent Transactions',
+              style: TextStyle(fontWeight: FontWeight.w500, fontSize: 16),
+            ),
             const SizedBox(
               height: 14,
             ),

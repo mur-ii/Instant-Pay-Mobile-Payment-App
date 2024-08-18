@@ -26,11 +26,8 @@ class ProfilePage extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                       boxShadow: [
                         BoxShadow(
-                          color: Color(0xff4D5DFA)
-                              .withOpacity(0.5), // Warna bayangan
-                          blurRadius: 6, // Jarak blur bayangan
-                          offset: Offset(0,
-                              2), // Posisi bayangan: x=0, y=3 (bayangan di bawah)
+                          color: Color(0xff4D5DFA).withOpacity(0.5),
+                          blurRadius: 6,
                         ),
                       ]),
                   child: Padding(
