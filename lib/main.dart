@@ -3,6 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:instant_pay_mobile_payment_app/pages/main_page.dart';
 import 'package:instant_pay_mobile_payment_app/pages/profile_page.dart';
 import 'package:instant_pay_mobile_payment_app/pages/recieve_page.dart';
+import 'package:instant_pay_mobile_payment_app/pages/splash_screen.dart';
+import 'package:instant_pay_mobile_payment_app/pages/verify_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,9 +23,11 @@ class MyApp extends StatelessWidget {
           useMaterial3: true,
           textTheme:
               GoogleFonts.leagueSpartanTextTheme(Theme.of(context).textTheme)),
-      initialRoute: MainPage.routeName,
+      initialRoute: SplashScreen.routeName,
       routes: {
-        MainPage.routeName: (context) => MainPage(),
+        SplashScreen.routeName: (context) => const SplashScreen(),
+        VerifyPage.routeName: (context) =>  VerifyPage(),
+        MainPage.routeName: (context) => const MainPage(),
         ProfilePage.routeName: (context) => const ProfilePage(),
         RecievePage.routeName: (context) => const RecievePage(),
       },

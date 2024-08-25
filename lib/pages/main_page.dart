@@ -9,7 +9,7 @@ import 'package:instant_pay_mobile_payment_app/widgets/tab_bar_rewards.dart';
 
 class MainPage extends StatefulWidget {
   static const routeName = '/home';
-  MainPage({super.key});
+  const MainPage({super.key});
 
   @override
   State<MainPage> createState() => _MainPageState();
@@ -20,7 +20,7 @@ class _MainPageState extends State<MainPage> {
 
   @override
   Widget build(BuildContext context) {
-    final double avatarRadius = 20.0;
+    const double avatarRadius = 20.0;
 
     return DefaultTabController(
       initialIndex: 0,
@@ -42,7 +42,7 @@ class _MainPageState extends State<MainPage> {
             width: MediaQuery.of(context).size.width,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              color: Color(0xffF5F5F5),
+              color: const Color(0xffF5F5F5),
             ),
             child: TextField(
               controller: _searchController,
@@ -57,25 +57,26 @@ class _MainPageState extends State<MainPage> {
               ),
             ),
           ),
-          actions: [
+          actions: const [
             Padding(
-              padding: const EdgeInsets.only(right: 22),
+              padding: EdgeInsets.only(right: 22),
               child: SizedBox(
                 width: 43,
                 height: 43,
                 child: CircleAvatar(
                   radius: avatarRadius,
                   backgroundColor: Color(0xffF5F5F5),
-                  child: const Icon(Icons.notifications),
+                  child: Icon(Icons.notifications),
                 ),
               ),
             ),
           ],
           bottom: TabBar(
-            labelStyle: menuTabBarTextStyle.copyWith(color: Color(0xff4D5DFA)),
-            indicatorColor: Color(0xff4D5DFA),
-            unselectedLabelColor: Color(0xff696D78),
-            tabs: [
+            labelStyle:
+                menuTabBarTextStyle.copyWith(color: const Color(0xff4D5DFA)),
+            indicatorColor: const Color(0xff4D5DFA),
+            unselectedLabelColor: const Color(0xff696D78),
+            tabs: const [
               Tab(
                 text: 'Home',
               ),
@@ -100,11 +101,11 @@ class _MainPageState extends State<MainPage> {
               TabBarRewards()
             ]),
         floatingActionButton: FloatingActionButton.extended(
-            backgroundColor: Color(0xff4D5DFA),
+            backgroundColor: const Color(0xff4D5DFA),
             onPressed: () {
               Navigator.pushNamed(context, RecievePage.routeName);
             },
-            label: Text(
+            label: const Text(
               'Recieve Money',
               style: TextStyle(color: Colors.white),
             )),
