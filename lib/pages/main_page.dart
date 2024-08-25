@@ -54,6 +54,8 @@ class _MainPageState extends State<MainPage> {
                   onPressed: () => _searchController.clear(),
                 ),
                 border: InputBorder.none,
+                contentPadding:
+                    const EdgeInsets.symmetric(vertical: 15, horizontal: 10),
               ),
             ),
           ),

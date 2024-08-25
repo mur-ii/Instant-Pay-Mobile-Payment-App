@@ -52,6 +52,10 @@ flutter:
     - assets/image-4.png
     - assets/image-5.png
     - assets/barcode.png
+    - assets/document/1.jpg
+    - assets/document/2.jpg
+    - assets/document/3.jpg
+    - assets/document/4.jpg
 
 
   
